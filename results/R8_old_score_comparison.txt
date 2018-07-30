@@ -1,0 +1,696 @@
+R8 Score Result 
+
+1. 
+Recipient A: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(10) = 250 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 240 
+
+Algorithm's Choice: A
+Original Choice: B
+Match? False
+
+2. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 210 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(30) = 180 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+3. 
+Recipient A: 
+Organization Size(40) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 205 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 195 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+4. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(5) = 165 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 175 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+5. 
+Recipient A: 
+Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 160 
+Recipient B: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(10) = 170 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+6. 
+Recipient A: 
+Organization Size(10) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 180 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(60) + Travel Time(30) = 250 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+7. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(20) = 110 
+Recipient B: 
+Organization Size(10) + Food Access(60) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(60) = 320 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+8. 
+Recipient A: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(5) = 195 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(5) = 185 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+9. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 100 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 160 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+10. 
+Recipient A: 
+Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(60) = 250 
+Recipient B: 
+Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 205 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+11. 
+Recipient A: 
+Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(60) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(10) = 280 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(10) = 200 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+12. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 130 
+Recipient B: 
+Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(30) = 190 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+13. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 175 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(60) = 220 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+14. 
+Recipient A: 
+Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(10) + Travel Time(5) = 135 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(5) = 235 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+15. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 100 
+Recipient B: 
+Organization Size(10) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(10) = 220 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+16. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(30) = 150 
+Recipient B: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(20) + Total Donation Received(60) + Travel Time(30) = 210 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+17. 
+Recipient A: 
+Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(30) = 180 
+Recipient B: 
+Organization Size(40) + Food Access(60) + Income Level(60) + Poverty Rate(60) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(10) = 290 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+18. 
+Recipient A: 
+Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 160 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 100 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+19. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(60) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(5) = 175 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(30) + Total Donation Received(10) + Travel Time(60) = 270 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+20. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(20) + Total Donation Received(10) + Travel Time(60) = 270 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(20) = 110 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+21. 
+Recipient A: 
+Organization Size(40) + Food Access(60) + Income Level(20) + Poverty Rate(60) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(5) = 245 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 115 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+22. 
+Recipient A: 
+Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 115 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(10) + Travel Time(60) = 270 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+23. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 180 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 100 
+
+Algorithm's Choice: A
+Original Choice: B
+Match? False
+
+24. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 130 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 120 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+25. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(10) + Travel Time(5) = 185 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(60) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(20) = 250 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+26. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 140 
+Recipient B: 
+Organization Size(10) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 180 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+27. 
+Recipient A: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(60) = 260 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(20) = 110 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+28. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 100 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(10) = 180 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+29. 
+Recipient A: 
+Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 155 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(50) + Total Donation Received(60) + Travel Time(5) = 245 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+30. 
+Recipient A: 
+Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(60) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(5) = 195 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(60) = 150 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+31. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(60) + Last Donation Received(20) + Total Donation Received(60) + Travel Time(20) = 240 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(20) = 190 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+32. 
+Recipient A: 
+Organization Size(10) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(60) = 190 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(20) + Total Donation Received(10) + Travel Time(60) = 160 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+33. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(10) + Travel Time(5) = 155 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(5) = 185 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+34. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(20) = 180 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 115 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+35. 
+Recipient A: 
+Organization Size(10) + Food Access(60) + Income Level(20) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 175 
+Recipient B: 
+Organization Size(10) + Food Access(60) + Income Level(60) + Poverty Rate(60) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(5) = 255 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+37. 
+Recipient A: 
+Organization Size(40) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 205 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(20) = 300 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+38. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(60) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(5) = 205 
+Recipient B: 
+Organization Size(10) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(60) = 270 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+39. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(60) = 220 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 155 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+40. 
+Recipient A: 
+Organization Size(40) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 165 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(20) = 210 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+41. 
+Recipient A: 
+Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(20) = 210 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(60) = 210 
+
+Algorithm's Choice: Tied
+Original Choice: B
+Match? False
+
+42. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(5) = 135 
+Recipient B: 
+Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 205 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+43. 
+Recipient A: 
+Organization Size(10) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 180 
+Recipient B: 
+Organization Size(10) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 140 
+
+Algorithm's Choice: A
+Original Choice: A
+Match? True
+
+44. 
+Recipient A: 
+Organization Size(10) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 180 
+Recipient B: 
+Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(30) = 260 
+
+Algorithm's Choice: B
+Original Choice: B
+Match? True
+
+45. 
+Recipient A: 
+Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(10) = 140 
+Recipient B: 
+Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(0) + Total Donation Received(60) + Travel Time(30) = 220 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+46. 
+Recipient A: 
+Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(5) = 125 
+Recipient B: 
+Organization Size(10) + Food Access(60) + Income Level(20) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(60) = 280 
+
+Algorithm's Choice: B
+Original Choice: A
+Match? False
+
+31/45 testings have shown matched
+Total Percentage of Match: 68.9 
+
+Future predictions 
+1. Donation Type: 1
+Organization Size of Recipient A: 0 
+Food Access Level of Recipient A: 2 
+Income Level of Recipient A: 4 
+Poverty Rate of Recipient A: 2 
+Last Donation Received of Recipient A: 10 
+Total Donation Received of Recipient A: 88 
+Travel Time of Recipient A: 1 
+
+Score for Recipient A: Organization Size(40) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(20) + Total Donation Received(60) + Travel Time(20) = 280 
+
+Organization Size of Recipient B: 2 
+Food Access Level of Recipient B: 2 
+Income Level of Recipient B: 2 
+Poverty Rate of Recipient B: 2 
+Last Donation Received of Recipient B: 13 
+Total Donation Received of Recipient B: 0 
+Travel Time of Recipient B: 0 
+
+Score for Recipient B: Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(20) + Total Donation Received(60) + Travel Time(60) = 270 
+
+
+Choice: A
+
+2. Donation Type: 1
+Organization Size of Recipient A: 2 
+Food Access Level of Recipient A: 2 
+Income Level of Recipient A: 4 
+Poverty Rate of Recipient A: 0 
+Last Donation Received of Recipient A: 2 
+Total Donation Received of Recipient A: 69 
+Travel Time of Recipient A: 0 
+
+Score for Recipient A: Organization Size(30) + Food Access(60) + Income Level(60) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(60) = 290 
+
+Organization Size of Recipient B: 3 
+Food Access Level of Recipient B: 0 
+Income Level of Recipient B: 2 
+Poverty Rate of Recipient B: 1 
+Last Donation Received of Recipient B: 4 
+Total Donation Received of Recipient B: 0 
+Travel Time of Recipient B: 2 
+
+Score for Recipient B: Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(5) = 145 
+
+
+Choice: A
+
+3. Donation Type: 0
+Organization Size of Recipient A: 0 
+Food Access Level of Recipient A: 2 
+Income Level of Recipient A: 2 
+Poverty Rate of Recipient A: 0 
+Last Donation Received of Recipient A: 2 
+Total Donation Received of Recipient A: 23 
+Travel Time of Recipient A: 2 
+
+Score for Recipient A: Organization Size(40) + Food Access(60) + Income Level(20) + Poverty Rate(60) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 210 
+
+Organization Size of Recipient B: 2 
+Food Access Level of Recipient B: 2 
+Income Level of Recipient B: 3 
+Poverty Rate of Recipient B: 2 
+Last Donation Received of Recipient B: 4 
+Total Donation Received of Recipient B: 72 
+Travel Time of Recipient B: 3 
+
+Score for Recipient B: Organization Size(30) + Food Access(60) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(30) = 180 
+
+
+Choice: A
+
+4. Donation Type: 0
+Organization Size of Recipient A: 0 
+Food Access Level of Recipient A: 2 
+Income Level of Recipient A: 5 
+Poverty Rate of Recipient A: 1 
+Last Donation Received of Recipient A: 12 
+Total Donation Received of Recipient A: 59 
+Travel Time of Recipient A: 1 
+
+Score for Recipient A: Organization Size(40) + Food Access(60) + Income Level(60) + Poverty Rate(20) + Last Donation Received(50) + Total Donation Received(10) + Travel Time(10) = 250 
+
+Organization Size of Recipient B: 0 
+Food Access Level of Recipient B: 1 
+Income Level of Recipient B: 1 
+Poverty Rate of Recipient B: 1 
+Last Donation Received of Recipient B: 2 
+Total Donation Received of Recipient B: 34 
+Travel Time of Recipient B: 1 
+
+Score for Recipient B: Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(10) = 130 
+
+
+Choice: A
+
+5. Donation Type: 1
+Organization Size of Recipient A: 0 
+Food Access Level of Recipient A: 1 
+Income Level of Recipient A: 5 
+Poverty Rate of Recipient A: 1 
+Last Donation Received of Recipient A: 10 
+Total Donation Received of Recipient A: 89 
+Travel Time of Recipient A: 3 
+
+Score for Recipient A: Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(20) + Total Donation Received(60) + Travel Time(5) = 225 
+
+Organization Size of Recipient B: 0 
+Food Access Level of Recipient B: 0 
+Income Level of Recipient B: 5 
+Poverty Rate of Recipient B: 1 
+Last Donation Received of Recipient B: 2 
+Total Donation Received of Recipient B: 38 
+Travel Time of Recipient B: 1 
+
+Score for Recipient B: Organization Size(40) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(20) = 180 
+
+
+Choice: A
+
+6. Donation Type: 0
+Organization Size of Recipient A: 1 
+Food Access Level of Recipient A: 1 
+Income Level of Recipient A: 0 
+Poverty Rate of Recipient A: 3 
+Last Donation Received of Recipient A: 1 
+Total Donation Received of Recipient A: 87 
+Travel Time of Recipient A: 2 
+
+Score for Recipient A: Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(60) + Travel Time(10) = 170 
+
+Organization Size of Recipient B: 1 
+Food Access Level of Recipient B: 1 
+Income Level of Recipient B: 4 
+Poverty Rate of Recipient B: 1 
+Last Donation Received of Recipient B: 11 
+Total Donation Received of Recipient B: 86 
+Travel Time of Recipient B: 0 
+
+Score for Recipient B: Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(60) + Travel Time(10) = 230 
+
+
+Choice: B
+
+7. Donation Type: 0
+Organization Size of Recipient A: 2 
+Food Access Level of Recipient A: 0 
+Income Level of Recipient A: 5 
+Poverty Rate of Recipient A: 1 
+Last Donation Received of Recipient A: 2 
+Total Donation Received of Recipient A: 51 
+Travel Time of Recipient A: 3 
+
+Score for Recipient A: Organization Size(30) + Food Access(20) + Income Level(60) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(30) = 180 
+
+Organization Size of Recipient B: 2 
+Food Access Level of Recipient B: 1 
+Income Level of Recipient B: 2 
+Poverty Rate of Recipient B: 4 
+Last Donation Received of Recipient B: 11 
+Total Donation Received of Recipient B: 86 
+Travel Time of Recipient B: 0 
+
+Score for Recipient B: Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(60) + Travel Time(10) = 190 
+
+
+Choice: B
+
+8. Donation Type: 1
+Organization Size of Recipient A: 1 
+Food Access Level of Recipient A: 0 
+Income Level of Recipient A: 3 
+Poverty Rate of Recipient A: 2 
+Last Donation Received of Recipient A: 11 
+Total Donation Received of Recipient A: 67 
+Travel Time of Recipient A: 2 
+
+Score for Recipient A: Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(10) + Travel Time(5) = 135 
+
+Organization Size of Recipient B: 2 
+Food Access Level of Recipient B: 1 
+Income Level of Recipient B: 3 
+Poverty Rate of Recipient B: 1 
+Last Donation Received of Recipient B: 3 
+Total Donation Received of Recipient B: 39 
+Travel Time of Recipient B: 1 
+
+Score for Recipient B: Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(20) = 130 
+
+
+Choice: A
+
+9. Donation Type: 1
+Organization Size of Recipient A: 0 
+Food Access Level of Recipient A: 0 
+Income Level of Recipient A: 0 
+Poverty Rate of Recipient A: 5 
+Last Donation Received of Recipient A: 3 
+Total Donation Received of Recipient A: 67 
+Travel Time of Recipient A: 1 
+
+Score for Recipient A: Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(10) + Total Donation Received(10) + Travel Time(20) = 140 
+
+Organization Size of Recipient B: 4 
+Food Access Level of Recipient B: 0 
+Income Level of Recipient B: 1 
+Poverty Rate of Recipient B: 0 
+Last Donation Received of Recipient B: 0 
+Total Donation Received of Recipient B: 36 
+Travel Time of Recipient B: 2 
+
+Score for Recipient B: Organization Size(10) + Food Access(20) + Income Level(20) + Poverty Rate(60) + Last Donation Received(0) + Total Donation Received(10) + Travel Time(5) = 125 
+
+
+Choice: A
+
+10. Donation Type: 0
+Organization Size of Recipient A: 0 
+Food Access Level of Recipient A: 1 
+Income Level of Recipient A: 1 
+Poverty Rate of Recipient A: 1 
+Last Donation Received of Recipient A: 13 
+Total Donation Received of Recipient A: 0 
+Travel Time of Recipient A: 3 
+
+Score for Recipient A: Organization Size(40) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(20) + Total Donation Received(60) + Travel Time(30) = 210 
+
+Organization Size of Recipient B: 1 
+Food Access Level of Recipient B: 0 
+Income Level of Recipient B: 3 
+Poverty Rate of Recipient B: 2 
+Last Donation Received of Recipient B: 11 
+Total Donation Received of Recipient B: 72 
+Travel Time of Recipient B: 1 
+
+Score for Recipient B: Organization Size(30) + Food Access(20) + Income Level(20) + Poverty Rate(20) + Last Donation Received(30) + Total Donation Received(10) + Travel Time(10) = 140 
+
+
+Choice: A
+
