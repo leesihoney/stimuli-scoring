@@ -17,11 +17,11 @@ cur = con.cursor()
 # reading by file by file
 def readFile(filename):
 	fo = open(filename, "r+")
-	personName = filename[fo.name.find("/")+1:fo.name.find("_old.txt")]
+	personName = filename[fo.name.find("/")+1:fo.name.find("_new.txt")]
 	print("Getting %s's scoring comparison data...." % (personName,))
 	result = fo.read()
 	resultArray = result.splitlines()
-	resultFile = open("%s_old_score_comparison.txt" % (personName),"w")
+	resultFile = open("%s_new_score_comparison.txt" % (personName),"w")
 	resultFile.write("%s Score Result \n\n" % (personName))
 	# debug test
 	totalCount = 0
@@ -47,7 +47,7 @@ def readFile(filename):
 			last_donationB= calcLastDonation(int(line[12]),donationType, personName)
 			total_donationB= calcTotalDonation(int(line[13]),donationType, personName)
 			distanceB = calcTravelTime(int(line[14]),donationType,personName)
-			
+
 			if None in [sizeA, accessA, incomeA, povertyA, last_donationA, total_donationA, distanceA,
 						sizeB, accessB, incomeB, povertyB, last_donationB, total_donationB, distanceB] or line[-2] == '':
 				
@@ -89,7 +89,7 @@ def readFile(filename):
 			pos_accessA = random.randint(0,2)
 			pos_incomeA = random.randint(0,5)
 			pos_povertyA = random.randint(0,6)
-			pos_last_donationA = random.randint(0,12)
+			pos_last_donationA = random.randint(0,13)
 			pos_total_donationA = random.randint(0,90)
 			pos_distanceA = random.randint(0,3)
 
@@ -97,18 +97,18 @@ def readFile(filename):
 			pos_accessB = random.randint(0,2)
 			pos_incomeB = random.randint(0,5)
 			pos_povertyB = random.randint(0,6)
-			pos_last_donationB = random.randint(0,12)
+			pos_last_donationB = random.randint(0,13)
 			pos_total_donationB = random.randint(0,90)
 			pos_distanceB = random.randint(0,3)
 
 			# generation combos 
 
-			if pos_last_donationA == 0:
+			if pos_last_donationA == 13:
 				pos_total_donationA = 0
 			elif pos_last_donationB == 12:
 				pos_total_donationA = random.randint(1,5)
 
-			if pos_last_donationB == 0:
+			if pos_last_donationB == 13:
 				pos_total_donationB = 0
 			elif pos_last_donationB == 12:
 				pos_total_donationB = random.randint(1,5)
@@ -285,16 +285,16 @@ def calcPovertyLevel(poverty, donation, person):
 					WHERE person = (%s) and food_type = (%s)'''
 
 	elif poverty == 1:
-		query = '''SELECT twenty
+		query = '''SELECT ten 
 					 FROM poverty
 					WHERE person = (%s) and food_type = (%s)'''
 	elif poverty == 2:
-		query = '''SELECT thirty
+		query = '''SELECT twenty
 					 FROM poverty
 					WHERE person = (%s) and food_type = (%s)'''
 
 	elif poverty == 3:
-		query = '''SELECT forty
+		query = '''SELECT thirty
 					 FROM poverty
 					WHERE person = (%s) and food_type = (%s)'''
 
@@ -311,16 +311,13 @@ def calcPovertyLevel(poverty, donation, person):
 		query = '''SELECT sixty
 					 FROM poverty
 					WHERE person = (%s) and food_type = (%s)'''
-	elif poverty == 7:
-		return None
+
 	return executeQuery(query, (person, donation))
 
 
 def calcLastDonation(lastD, donation, person):
 	if lastD == 0:
-		query = '''SELECT never
-					 FROM lastDonation
-					WHERE person = (%s) and food_type = (%s)'''
+		return None
 	if lastD == 1:
 		query = '''SELECT one
 					 FROM lastDonation
@@ -381,79 +378,151 @@ def calcLastDonation(lastD, donation, person):
 					 FROM lastDonation
 					WHERE person = (%s) and food_type = (%s)'''
 
+	elif lastD == 13:
+		query = '''SELECT never
+					 FROM lastDonation
+					WHERE person = (%s) and food_type = (%s)'''
+
 	return executeQuery(query, (person, donation))
 
 
 
 def calcTotalDonation(totalD, donation, person):
-	if totalD == 0:
-		query = '''SELECT zero
-					 FROM totalDonation
-					WHERE person = (%s)'''
+	if donation == 0: 
+		if totalD in [0,2,5,9,14,20,27,35,44,54,65,77,90]:
+			query = '''SELECT zero
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [1,2]:
-		query = '''SELECT one 
-					 FROM totalDonation
-					WHERE person = (%s)'''	
+		elif totalD in [1,4,8,13,19,26,34,43,53,64,76,89]:
+			query = '''SELECT one 
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [3,4,5]:
-		query = '''SELECT two
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [3,7,12,18,25,33,42,52,63,75,78,88]:
+			query = '''SELECT two
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [6,7,8,9]:
-		query = '''SELECT three
-					 FROM totalDonation
-					WHERE person = (%s)'''
-	elif totalD in [10,11,12,13,14]:
-		query = '''SELECT four 
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [6,11,17,24,32,41,51,62,74,87]:
+			query = '''SELECT three
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [10,16,23,31,40,50,61,73,86]:
+			query = '''SELECT four 
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
 
-	elif totalD in [15,16,17,18,19,20]:
-		query = '''SELECT five
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [15,22,30,39,49,60,72,85]:
+			query = '''SELECT five
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [21,22,23,24,25,26,27]:
-		query = '''SELECT six
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [21,29,38,48,59,71,84]:
+			query = '''SELECT six
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [28,29,30,31,32,33,34,35]:
-		query = '''SELECT seven
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [28,37,47,58,70,83]:
+			query = '''SELECT seven
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [36,37,38,39,40,41,42,43,44]:
-		query = '''SELECT eight
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [36,46,57,69,82]:
+			query = '''SELECT eight
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [45,46,47,48,49,50,51,52,53,54]:
-		query = '''SELECT nine
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [45,56,68,81]:
+			query = '''SELECT nine
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [55,56,57,58,59,60,61,62,63,64,65]:
-		column = "ten"
-		query = '''SELECT ten 
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [55,67,80]:
+			query = '''SELECT ten 
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [66,67,68,69,70,71,72,73,74,75,76,77]:
-		column = "eleven"
-		query = '''SELECT eleven 
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD in [66,79]:
+			query = '''SELECT eleven 
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	elif totalD in [78,79,80,81,82,83,84,85,86,87,88,89,90]:
-		query = '''SELECT twelve
-					 FROM totalDonation
-					WHERE person = (%s)'''
+		elif totalD == 78:
+			query = '''SELECT twelve
+						 FROM totalDonationCommon
+						WHERE person = (%s) and food_type = (%s)'''
 
-	return executeQuery(query, (person,))
+	elif donation == 1: 
+		if totalD in [0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78]:
+			query = '''SELECT zero
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [2, 4, 7, 11, 16, 22, 29, 37, 46, 56, 67, 79]:
+			query = '''SELECT one 
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [5, 8, 12, 17, 23, 30, 38, 47, 57, 68, 80]:
+			query = '''SELECT two
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [9, 13, 18, 24, 31, 39, 48, 58, 69, 81]:
+			query = '''SELECT three
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [14, 19, 25, 32, 40, 49, 59, 70, 82]:
+			query = '''SELECT four 
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [20, 26, 33, 41, 50, 60, 71, 83]:
+			query = '''SELECT five
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [27, 34, 42, 51, 61, 72, 84]:
+			query = '''SELECT six
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [35, 43, 52, 62, 73, 85]:
+			query = '''SELECT seven
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [44, 53, 63, 74, 86]:
+			query = '''SELECT eight
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [54, 64, 75, 87]:
+			query = '''SELECT nine
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [65, 76, 88]:
+			query = '''SELECT ten 
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD in [77, 89]:
+			query = '''SELECT eleven 
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+		elif totalD == 90:
+			query = '''SELECT twelve
+						 FROM totalDonationUncommon
+						WHERE person = (%s) and food_type = (%s)'''
+
+	return executeQuery(query, (person, donation))
+
 
 
 def calcTravelTime(travel, donation, person):

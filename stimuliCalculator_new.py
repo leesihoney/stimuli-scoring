@@ -49,8 +49,7 @@ def readFile(filename):
 			distanceB = calcTravelTime(int(line[14]),donationType,personName)
 
 			if None in [sizeA, accessA, incomeA, povertyA, last_donationA, total_donationA, distanceA,
-						sizeB, accessB, incomeB, povertyB, last_donationB, total_donationB, distanceB]:
-				
+						sizeB, accessB, incomeB, povertyB, last_donationB, total_donationB, distanceB] or line[-2] == '':
 				continue
 			else:
 				sumA = sizeA + accessA + incomeA + povertyA + last_donationA + total_donationA + distanceA
@@ -317,7 +316,7 @@ def calcPovertyLevel(poverty, donation, person):
 
 def calcLastDonation(lastD, donation, person):
 	if lastD == 0:
-		return 0
+		return None
 	if lastD == 1:
 		query = '''SELECT one
 					 FROM lastDonation
