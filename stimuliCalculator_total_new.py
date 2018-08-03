@@ -71,9 +71,9 @@ def readFile(filename):
 				resultFile.write("\nOriginal Choice: %s" % choice)
 				resultFile.write("\nMatch? %s\n\n" % str(algoChoice==choice))
 
+				totalCount+=1 
 				if algoChoice == choice:
 					matchCount+=1
-				totalCount+=1 
 
 	resultFile.write("%d/%d testings have shown matched\n" % (matchCount,totalCount))
 
