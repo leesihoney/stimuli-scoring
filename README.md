@@ -57,9 +57,6 @@ $ python filename.py
 * [Python](https://www.python.org/) - plpgsql library
 * [PostgreSQL](https://www.postgresql.org/docs/9.6/static/plpgsql.html) - Database
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
